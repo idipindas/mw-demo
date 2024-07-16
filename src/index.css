@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-100% / 3)); }
+}
+
+.animate-scroll {
+  display: flex;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: scroll 10s linear infinite;
+}
+
+.animate-scroll > div {
+  display: inline-block;
+  width: calc(100% / 3);
+}
+
+
+  
